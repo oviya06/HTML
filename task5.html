@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password</title>
+    <style>
+        *{
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form>
+        <div>
+            <label>ENTER PASSWORD:</label>
+            <input type="password" id="enter" >
+        </div>
+        <p>
+        <div>
+            <label>RENTER PASSWORD:</label>
+            <input type="password" id="renter">
+        </div>
+        </p>
+        <button type="submit" onclick="check()">CONFIRM</button>
+    </form>
+    <script>
+        function check(){
+        var pw1 = document.getElementById(enter);
+        var pw2 = document.getElementById(renter);
+        if(pw1==pw2){
+        alert("correct password");
+        }
+        else
+        alert("incorrect password");
+    }
+    </script>
+</body>
+</html>
